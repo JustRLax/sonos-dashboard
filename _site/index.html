@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+			
+				Home Page
+			
+		</title>
+		<script src="//localhost:35729/livereload.js"></script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        
+        <!--   //Baseliner -->
+        <script src="http://files.keyes.ie/things/baseliner/baseliner-latest.min.js"></script>
+        <script>
+        window.onload = function() {
+            baseliner = new Baseliner();
+        }
+        </script>
+        
+        
+        <script>
+        // Test from Modernizr
+        var supportsSvg = function() {
+          var div = document.createElement('div');
+          div.innerHTML = '<svg/>';
+          return (div.firstChild && div.firstChild.namespaceURI) == 'http://www.w3.org/2000/svg';
+        };
+        if (!supportsSvg()) {
+          (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
+          // Note the empty first item in the array. Don't do anything if supported.
+          grunticon(["", "/fallbacks/icons.data.png.css", "/fallbacks/icons.fallback.css"]);
+        } else {
+          // Inline SVG is supported so Ajax for the sprite.
+          var ajax = new XMLHttpRequest();
+          ajax.open("GET", "svg-defs.svg", true);
+          ajax.send();
+          ajax.onload = function(e) {
+            var div = document.createElement("div");
+            div.innerHTML = ajax.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
+          }
+        }
+      </script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+	    <!--
+<nav>
+    <ul>
+        <li><a href="#">Nav Link 1</a></li>
+        <li><a href="#">Nav Link 2</a></li>
+        <li><a href="#">Nav Link 3</a></li>
+        <li><a href="#">Nav Link 4</a></li>
+    </ul>
+</nav>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use xlink:href="#shape-bike"></use>
+            </svg>
+-->    
+    </header>
+    
+            <div id="main">
+            <header class="play-header">
+                <div class="time-played">
+                    <p class="time">2:35 / 5:26</p>
+                </div> <!-- / .time-played -->
+            </header> <!-- / .play-header -->
+            <div class="top-section">
+                <div class="track-order prev">
+                    <p class="track">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                            <use xlink:href="#shape-prev"></use>
+                        </svg>
+                        Previous Track
+                    </p>
+                    <img src="img/album-1.jpg" alt="Album">
+                    <p class="title">Blak and Blue <strong>Gary Clark Jr.</strong></p>
+                </div> <!-- / .track-order -->
+                
+                <div class="main-track">
+                    <img src="img/main-album.jpg" alt="Main Album">
+                    <div class="center">
+                        <div class="current-details">
+                            <h1 class="track-info"><strong>Numb</strong> / Blak and Blu</h1>
+                            <h1 class="artist">Gary Clark Jr.</h1>
+                            <p class="genre">Genre: Rock Blues</p>
+                            <p class="play-pause">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="#shape-play"></use>
+                                </svg>
+                                Playing
+                            </p>
+                        </div> <!-- .current-details -->
+                    </div> <!-- / .center -->
+                </div> <!-- / .main-track -->
+                <div class="track-order next">
+                    <p class="track">
+                        Next Track
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                            <use xlink:href="#shape-next"></use>
+                        </svg>
+                    </p>
+                    <img src="img/album-1.jpg" alt="Album">
+                    <p class="title">Blak and Blue <strong>Gary Clark Jr.</strong></p>
+                </div> <!-- / .track-order -->
+            </div> <!-- / .top-section -->
+            <div class="bottom-section">
+                <section class="bio">
+                    <figure class="image">
+                        <img src="img/artist-background.jpg" >
+                    </figure>
+                    <div class="center">
+                        <article class="content">
+                            <h2>Biography</h2>
+                            <p>Gary Clark, Jr. (born February 15, 1984) is an American guitarist and actor based in Austin, Texas. Clark shared the stage with various legends of rock and roll, and has stated that he is "influenced by blues, jazz, soul country, as well as hip hop". Clark's musical trademarks are his distorted guitar sound and smooth vocal style.</p>
+                        </article>
+                    </div> <!-- / .center -->
+                </section> <!-- / .bio -->
+                <section class="disco-artists">
+                    
+                    <div class="discography">
+                        <h2>Discography</h2>
+                        <div class="albums">
+                            <div class="album">
+                                <img src="img/disco-1.jpg" alt="Album">
+                                <div class="album-name">
+                                    <div class="content">
+                                        <strong>Blak and Blu</strong>
+                                        2014
+                                    </div> <!-- / .content -->
+                                </div> <!-- / .albumm-name -->
+                            </div> <!-- / .album -->
+                            <div class="album">
+                                <img src="img/disco-2.jpg" alt="Album">
+                                <div class="album-name">
+                                    <div class="content">
+                                        <strong>Gary Clark Jr. LP</strong>
+                                        2010
+                                    </div> <!-- / .content -->
+                                </div> <!-- / .albumm-name -->
+                            </div> <!-- / .album -->
+                        </div> <!-- / .albums -->
+                    </div> <!-- / .discography -->
+                    
+                    <div class="related-artists">
+                        <h2>Related Artists</h2>
+                        <div class="artists">
+                            <div class="artist">
+                                <img src="img/artist-1.jpg" alt="title">
+                                <div class="content">
+                                    <p>Black Joe Lewis & The Honeybears</p>
+                                </div> <!-- / .content -->
+                            </div> <!-- / .artist -->
+                            
+                        </div> <!-- / .artists -->
+                    </div> <!-- / .related -->
+                    
+                </section> <!-- / .disco-artists -->
+                
+                
+            </div> <!-- / .bottom-section -->
+            <div class="navigation">
+                <ul>
+                    <li><span>Biography</span></li>
+                    <li><span>Discography</span> <span>Related Artists</span></li>
+                    <li><span>Upcoming Shows</span> <span>Latest News</span></li>
+                </ul>
+            </div> <!-- / .navigation -->
+        </div> <!-- / #main -->
+    
+    <footer>
+	    
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>
