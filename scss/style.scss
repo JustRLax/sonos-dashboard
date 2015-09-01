@@ -283,14 +283,14 @@ svg {
 }
 .bottom-section {
     width: 100%;
-    height: 420px;
     z-index: 100;
     position: absolute;
     bottom: 40px;
     left: 0;
     display: flex;
-    > section {
-        background: rgba(0,0,0,.8);
+    opacity: .6;
+    section {
+        background: rgba(0,0,0,.68);
         h2 {
             font-size: $heading-m;
             text-transform: uppercase;
@@ -302,7 +302,6 @@ svg {
     .bio {
         width: 100%;
         position: relative;
-        display: none;
         .center {
             width: 100%;
             height: 100%;
@@ -344,6 +343,126 @@ svg {
             }
         }
     }
+    .disco-artists {
+        width: 100%;
+        float: left;
+        height: 420px;
+        display: flex;
+        align-items: stretch;
+        .discography {
+            width: 68%;
+        }
+        .related-artists {
+            width: 32%;
+        }
+    }
+    .discography {
+        float: left;
+        width: 100%;
+        padding: 40px;
+        border-right: 1px solid #000;
+        h2 {
+            margin-bottom: 20px;
+        }
+        .albums {
+            width: 100%;
+            float: left;
+            .album {
+                float: left;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                text-align: left;
+            }
+            img {
+                float: left;
+            }
+            .album-name {
+                float: left;
+                margin-left: 30px;
+                strong {
+                    display: block;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .related-artists {
+        padding: 40px;
+        float: right;
+        width: 100%;
+        h2 {
+            margin-bottom: 20px;
+        }
+        .artist {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        img {
+            float: left;
+            border-radius: 50%;
+        }
+        .content {
+            float: left;
+            margin-left: 30px;
+        }
+    }
+    .upcoming-news {
+        width: 100%;
+        float: left;
+        height: 320px;
+        h2 {
+            margin-bottom: 20px;
+        }
+        .upcoming-shows {
+            width: 50%;
+        }
+        .latest-news {
+            width: 50%;
+        }   
+    }
+    .upcoming-shows {
+        float: left;
+        padding: 40px;
+        border-right: 1px solid #000;
+        .date {
+            float: left;
+            font-weight: 700;
+            font-family: $font-2;
+            font-size: $heading-m;
+            margin-right: 30px;
+        }
+        .details {
+            float: left;
+            margin-top: -2px;
+            strong {
+                display: block;
+                font-weight: 700;
+                margin-bottom: 7px;
+            }
+        }
+    }
+    .latest-news {
+        float: left;
+        padding: 40px;
+        .news {
+            float: left;
+            width: 100%;
+            margin-top: -2px;
+        }
+        p {
+            line-height: 1.12;
+        }
+        span {
+            display: block;
+            font-size: $content-sm;
+            opacity: .68;
+            margin-top: 8px;
+        }
+    }
     
 }
 .navigation {
@@ -361,14 +480,16 @@ svg {
         justify-content: space-between;
     }
     li {
-        color: #fff;
         letter-spacing: 10px;
         text-transform: uppercase;
         font-size: $content-sm;
         line-height: 40px;
-        opacity: .68;
-        &.active {
-            opacity: 1;
+        a {
+            color: #fff;
+            opacity: .4;   
+            &.active {
+                opacity: 1;
+            }
         }
     }
     span {

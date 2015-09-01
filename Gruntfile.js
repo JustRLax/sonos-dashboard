@@ -11,8 +11,7 @@ module.exports = function(grunt) {
 		vendor: {
 			src: [
 				'js/vendor/avoid-console.js',
-				'js/vendor/jQuery.fontFlex.js',
-				'js/vendor/jquery.keep-ratio.js',
+				'js/vendor/jquery.bxslider.js',
 				'js/vendor/owl.carousel.js'
 			],
 			dest: 'js/plugins.js'
