@@ -237,20 +237,27 @@ svg {
             width: 300px;
             margin-right: 50px;
         }
-        .center {
-            float: left;
-            display: table;
-        }
         .current-details {
-            display: table-cell;
-            vertical-align: middle;
+            float: left;
+            max-width: 1530px;
+            overflow: hidden;
         }
         .track-info {
             font-size: $heading-l;
             margin-top: -2px;
             margin-bottom: 2px;
+            white-space: nowrap;
             strong {
                 font-weight: 900;
+            }
+            &.marquee {
+                span {
+                    display: inline-block;
+                    padding-right: 40px;
+                    margin-right: 40px;
+                    border-right: 5px solid #fff;
+                    animation: marquee 20s linear infinite;
+                }
             }
         }
         .artist {
@@ -259,6 +266,16 @@ svg {
             font-weight: 700;
             letter-spacing: -2px;
             margin-bottom: 13px;
+            white-space: nowrap;
+            &.marquee {
+                span {
+                    display: inline-block;
+                    padding-right: 40px;
+                    margin-right: 40px;
+                    border-right: 5px solid #fff;
+                    animation: marquee 20s linear infinite;
+                }
+            }
         }
         .genre {
             opacity: .34;
@@ -413,7 +430,7 @@ svg {
     .upcoming-news {
         width: 100%;
         float: left;
-        height: 320px;
+        height: 220px;
         h2 {
             margin-bottom: 20px;
         }
@@ -428,12 +445,19 @@ svg {
         float: left;
         padding: 40px;
         border-right: 1px solid #000;
+        .show {
+            float: left;
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: left;
+        }
         .date {
             float: left;
             font-weight: 700;
             font-family: $font-2;
             font-size: $heading-m;
             margin-right: 30px;
+            width: 110px;
         }
         .details {
             float: left;
@@ -452,6 +476,12 @@ svg {
             float: left;
             width: 100%;
             margin-top: -2px;
+            text-align: left;
+        }
+        .article {
+            float: left;
+            width: 100%;
+            margin-bottom: 20px;
         }
         p {
             line-height: 1.12;
